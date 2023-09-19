@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+    border-radius: 15px;
+}
+
+.form-wrapper {
+    border: 1px solid #e0e0e0;
+    padding: 40px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.register-cta {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-cta p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.register-cta button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}

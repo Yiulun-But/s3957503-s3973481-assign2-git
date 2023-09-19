@@ -1,0 +1,38 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    height: 500px; /* Adjust the height as needed */
+    background-image: url('HeroSection.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-showtimes {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #1c7293;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .btn-showtimes:hover {
+    background-color: #706381;
+  }
+  

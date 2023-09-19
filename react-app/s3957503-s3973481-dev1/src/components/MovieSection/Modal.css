@@ -1,0 +1,54 @@
+
+.modal {
+    --bs-modal-width: 1000px;
+}
+.modal-content {
+    width: 100%;
+    max-width: 1000px;
+    height:600px;
+    overflow-y: hidden;
+}
+.scroll {
+    overflow-y: scroll;
+    height: 500px
+}
+
+textarea.form-control {
+    max-height:250px;
+}
+
+.write-review {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.to-the-right {
+    float: right;
+}
+
+.to-the-left {
+    float: left;
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.float-right {
+    float: right;
+}
+
+.modal-content button {
+    background-color: #fff; 
+}
+
+h2.modal-header {
+    margin-left: 400px;
+    border: 0px;
+    
+}

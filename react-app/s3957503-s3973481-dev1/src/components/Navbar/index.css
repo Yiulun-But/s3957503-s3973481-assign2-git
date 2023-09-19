@@ -1,0 +1,108 @@
+body {
+    background-color: #303841;
+}
+.welcome-text {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.profile-popup {
+    display: none;
+    position: absolute;
+    background-color: #00adb5;
+    border: 1px solid #ccc;
+    width: 500px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1;
+}
+
+.profile-popup p {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.profile-popup label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.welcome-text:hover .profile-popup,
+.welcome-text:active .profile-popup {
+    display: block;
+}
+
+.btn-container {
+    text-align: center;
+    padding-right: 150px;
+}
+
+.small-btn {
+    font-size: 12px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #58727f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.small-btn:hover {
+    background-color: #3a4042;
+}
+
+
+.nav-container {
+    background: #63D471;
+    height: 85px;
+    padding: 0;
+}
+
+.nav-link {
+    color: #808080;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-link.active {
+    color: #000000;
+}
+
+.bars {
+    display: none;
+    color: #808080;
+}
+
+@media screen and (max-width: 768px) {
+    .bars {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translate(-100%, 75%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+}

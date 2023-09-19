@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.movie {
+  position: relative;
+  width: 23%;
+  margin: 1%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-fit: fill;
+}
+
+.movie-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie:hover .movie-details {
+  opacity: 1;
+}
+
+.movie-details p {
+  margin: 10px 0;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 60%;
+  padding: 5px;
+}
+
+.movie-details button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.movie-details button:hover {
+  background-color: #50717b;
+}
+
+.screening-time {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #93deff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.modal-content li {
+  padding: 5px 0;
+}
+
+.modal-content button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #50717b;
+}
+
+.screening-time {
+  margin: 10px 0;
+}
+
+.screening-time-list {
+  margin-top: 10px;
+}
+
+.screening-time-list h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.screening-time-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.screening-time-list li {
+  margin-bottom: 5px;
+}
+
